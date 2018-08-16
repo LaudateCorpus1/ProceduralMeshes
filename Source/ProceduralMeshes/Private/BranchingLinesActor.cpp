@@ -46,7 +46,7 @@ void ABranchingLinesActor::GenerateMesh()
 {
 	// -------------------------------------------------------
 	// Setup the random number generator and create the branching structure
-	RngStream = FRandomStream::FRandomStream(RandomSeed);
+	RngStream.Initialize(RandomSeed);
 	CreateSegments();
 
 	// The number of vertices or polygons wont change at runtime, so we'll just allocate the arrays once

@@ -156,7 +156,7 @@ private:
 	TArray<FVector> OffsetDirections;
 
 	UPROPERTY(Transient)
-	FRandomStream RngStream = FRandomStream::FRandomStream();
+	FRandomStream RngStream;
 
 	// Mesh buffers
 	void SetupMeshBuffers();

@@ -52,7 +52,7 @@ private:
 	void GenerateGrid(TArray<FRuntimeMeshVertexSimple>& InVertices, TArray<int32>& InTriangles, FVector2D InSize, int32 InLengthSections, int32 InWidthSections, const TArray<float>& InHeightValues);
 
 	UPROPERTY(Transient)
-	FRandomStream RngStream = FRandomStream::FRandomStream();
+	FRandomStream RngStream;
 
 	TArray<float> HeightValues;
 

@@ -40,7 +40,7 @@ void AHeightFieldNoiseActor::SetupMeshBuffers()
 
 void AHeightFieldNoiseActor::GeneratePoints()
 {
-	RngStream = FRandomStream::FRandomStream(RandomSeed);
+	RngStream.Initialize(RandomSeed);
 
 	// Setup example height data
 	int32 NumberOfPoints = (LengthSections + 1) * (WidthSections + 1);

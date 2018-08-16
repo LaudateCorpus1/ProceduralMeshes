@@ -77,8 +77,8 @@ void ASimpleCubeActor::GenerateCube(TArray<FRuntimeMeshVertexSimple>& InVertices
 	// Now we create 6x faces, 4 vertices each
 	int32 VertexOffset = 0;
 	int32 TriangleOffset = 0;
-	FPackedNormal Normal = FPackedNormal::ZeroNormal;
-	FPackedNormal Tangent = FPackedNormal::ZeroNormal;
+	FPackedNormal Normal;
+	FPackedNormal Tangent;
 
  	// Front (+X) face: 0-1-2-3
 	Normal = FVector(1, 0, 0);
