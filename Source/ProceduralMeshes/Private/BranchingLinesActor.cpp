@@ -11,6 +11,7 @@ ABranchingLinesActor::ABranchingLinesActor()
 	RootComponent = RootNode;
 
 	MeshComponent = CreateDefaultSubobject<URuntimeMeshComponent>(TEXT("ProceduralMesh"));
+	MeshComponent->GetOrCreateRuntimeMesh()->SetShouldSerializeMeshData(false);
 	MeshComponent->SetupAttachment(RootComponent);
 
 	// Setup random offset directions
