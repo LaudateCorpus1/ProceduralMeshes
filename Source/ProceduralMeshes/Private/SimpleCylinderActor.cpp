@@ -210,7 +210,7 @@ void ASimpleCylinderActor::GenerateCylinder(TArray<FRuntimeMeshVertexSimple>& In
 		// -------------------------------------------------------
 		// Caps are closed here by triangles that start at 0, then use the points along the circle for the other two corners.
 		// A better looking method uses a vertex in the center of the circle, but uses two more polygons.  We will demonstrate that in a different sample.
-		if (QuadIndex != 0 && bInCapEnds)
+		if (QuadIndex != 0 && QuadIndex != InCrossSectionCount - 1 && bInCapEnds)
 		{
 			// Bottom cap
 			FVector capVertex0 = FVector(FMath::Cos(0) * InWidth, FMath::Sin(0) * InWidth, 0.f);
