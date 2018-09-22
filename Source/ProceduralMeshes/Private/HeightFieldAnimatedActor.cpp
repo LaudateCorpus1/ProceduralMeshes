@@ -11,7 +11,6 @@ AHeightFieldAnimatedActor::AHeightFieldAnimatedActor()
 	RootComponent = RootNode;
 
 	MeshComponent = CreateDefaultSubobject<URuntimeMeshComponent>(TEXT("ProceduralMesh"));
-	MeshComponent->bShouldSerializeMeshData = false;
 	MeshComponent->SetupAttachment(RootComponent);
 
 	PrimaryActorTick.bCanEverTick = true;
