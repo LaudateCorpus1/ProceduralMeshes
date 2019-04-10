@@ -4,7 +4,9 @@
 ## CODE HAS MOVED
 Instead of keeping this example project as a git repo + submodule I decided to merge them into a single repo (as any sane person would do).  This caused quite a lot of confusion for people not familiar with submodules.
 
-Please see the main project here, which now contains all the code that was here.. and upgraded to UE 4.22 as well!
+If you still would like the separate submodule, I made a branch here with the latest UE 4.22 version but I don't plan on supporting this repository anymore.
+
+Please see the main project here, which now contains all the code that was here and will (hopefully) be supported forwards.
 
 https://github.com/SiggiG/ProceduralMeshDemos
 
